@@ -8,7 +8,7 @@ pipeline{
         GREETING = 'Jenkins...'
     }
     options{
-        timeout(time: 1,unit: 'HOUR')
+        timeout(time: 1,unit: 'HOURS')
         disableConcurentBuilds()
         }
     
