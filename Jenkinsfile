@@ -4,6 +4,9 @@ pipeline{
          label 'AGENT-1'
        }
     }
+    environment{
+        GREETING = 'HareKrishna'
+    }
 
    //build
     stages{
@@ -19,7 +22,10 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                echo 'Deploy...'
+               sh """
+                echo  "this is shell script"
+                env
+               """
             }
         }
     }
