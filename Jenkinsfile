@@ -5,7 +5,11 @@ pipeline{
        }
     }
     environment{
-        GREETING = 'HareKrishna'
+        GREETING = 'Jenkins...'
+    }
+    options{
+        timeout(time: 1,unit: 'SECONDS')
+        }
     }
 
    //build
