@@ -32,7 +32,7 @@ pipeline{
             echo 'this runs when it is failure,user added send some alerts'
         }
         success{
-            echo 'success'
+            echo 'this runs when it is success'
         }
     }
 }
