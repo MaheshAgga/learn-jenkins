@@ -24,7 +24,7 @@ pipeline{
             steps{
                sh """
                 echo  "this is shell script"
-                env
+                echo "$GREETING"
                """
             }
         }
